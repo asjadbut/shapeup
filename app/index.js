@@ -1,10 +1,11 @@
 import React, {useState} from 'react';
-import { Text, View, Modal, Pressable, Alert } from "react-native";
+import { Text, View, Modal, Pressable, Alert ,TextInput} from "react-native";
 import Tool from './components/Tool';
 import styles from './styles/shapeup';
-import { tools } from "./constants/tools";
+import { toolsData } from "./data/toolsData";
 
 export default function Page() {
+
   const [modalVisible, setModalVisible] = useState(false);
   const [modalText, setModalText] = useState("");
   return (
@@ -14,7 +15,7 @@ export default function Page() {
           ShapeUp
         </Text>
         <View style={styles.tools}>
-          {tools.map((tool,index) => {
+          {toolsData.map((tool,index) => {
             return (<Tool key={index} name={tool.name} logoUrl={tool.logoUrl} description={tool.description} pageLink = {tool.pageLink} setModalVisible={setModalVisible} setModalText={setModalText} />)
           })}
         </View>
