@@ -38,12 +38,24 @@ const styles = StyleSheet.create({
     elevation: 5,
   },
   button: {
-    borderRadius: 20,
+    borderRadius: 13,
     padding: 10,
     elevation: 2,
   },
   buttonClose: {
     backgroundColor: 'black',
+  },
+  buttonCalculate: {
+    marginTop:30,
+    backgroundColor: 'black',
+    height:40,
+    borderRadius: 13,
+    padding: 10,
+  },
+  buttonCalculateText:{
+    color:'white',
+    fontWeight:'bold',
+    textAlign:'center'
   },
   textStyle: {
     color: 'white',
@@ -58,7 +70,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     flexDirection: 'row',
     alignItems: 'center',
-    marginBottom: 20,
+    marginBottom: 80,
   },
   topBarTitle: {
     fontSize: 20,
@@ -68,15 +80,30 @@ const styles = StyleSheet.create({
     width: 24,
     height: 24,
   },
+  formPusher:{
+    padding:20,
+    
+  },
   formContainer:{
     padding:20,
+    borderWidth:1,
+    borderRadius: 13,
+    borderColor: 'gray',
   },
   input: {
     height: 40,
     margin: 12,
     borderBottomWidth:1,
     padding: 10,
-    
+    borderColor: 'gray',
+  },
+  dropdown: {
+      paddingHorizontal: 8,
+      backgroundColor: 'transparent',
+  },
+  placeholderStyle:{
+    color:"#232323",
+    fontSize:14
   }
 
 });

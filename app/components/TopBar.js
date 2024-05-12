@@ -1,5 +1,5 @@
 import { View, Text, Image } from 'react-native';
-import styles from '../styles/shapeup';
+import styles from '../styles/style';
 import { Link } from 'expo-router';
 
 export default function TopBar({ topBarTitle }) {

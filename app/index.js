@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
-import { Text, View, Modal, Pressable, Alert ,TextInput} from "react-native";
+import { Text, View, Modal, Pressable} from "react-native";
 import Tool from './components/Tool';
-import styles from './styles/shapeup';
+import styles from './styles/style';
 import { toolsData } from "./data/toolsData";
 
 export default function Page() {
@@ -25,7 +25,6 @@ export default function Page() {
         transparent={false}
         visible={modalVisible}
         onRequestClose={() => {
-          Alert.alert('Modal has been closed.');
           setModalVisible(!modalVisible);
         }}>
         <View style={styles.centeredView}>
