@@ -65,18 +65,18 @@ const styles = StyleSheet.create({
     marginBottom: 15,
     textAlign: 'left',
   },
-  topBar: {
+  navBar: {
     paddingTop: 20,
     paddingHorizontal: 20,
     flexDirection: 'row',
     alignItems: 'center',
     marginBottom: 80,
   },
-  topBarTitle: {
+  navBarTitle: {
     fontSize: 20,
     fontWeight: 'bold',
   },
-  topBarBackIcon: {
+  navBarBackIcon: {
     width: 24,
     height: 24,
   },

@@ -1,5 +1,5 @@
 import { View } from 'react-native';
-import TopBar from '../components/TopBar';
+import NavBar from '../components/NavBar';
 import Input from '../components/Input';
 import DropDownCustom from '../components/DropDownCustom';
 import PressableCustom from '../components/PressableCustom';
@@ -12,7 +12,7 @@ export default function BodyFatCalculator() {
   ]
   return (
     <View style={[styles.container, styles.formPusher]}>
-      <TopBar topBarTitle={"    Body Fat Calculator"} />
+      <NavBar navBarTitle={"    Body Fat Calculator"} />
       <View style={styles.formContainer}>
         <DropDownCustom placeholder={"Select your gender"} options={options} />
         <Input placeholder={"Enter your waist (inches)"} keyboardType={"numeric"} />

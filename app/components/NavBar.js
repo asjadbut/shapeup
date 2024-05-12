@@ -2,21 +2,21 @@ import { View, Text, Image } from 'react-native';
 import styles from '../styles/style';
 import { Link } from 'expo-router';
 
-export default function TopBar({ topBarTitle }) {
+export default function NavBar({ navBarTitle }) {
     const backBtnIconURI = require('../images/icons/left-arrow.png');
     return (
-        <View style={styles.topBar}>
+        <View style={styles.navBar}>
             <Link href={"/"}>
                 <View>
                     <View>
                         <Image
-                            style={styles.topBarBackIcon}
+                            style={styles.navBarBackIcon}
                             source={backBtnIconURI}
                         />
                     </View>
                 </View>
             </Link>
-            <Text style={styles.topBarTitle}>{topBarTitle}</Text>
+            <Text style={styles.navBarTitle}>{navBarTitle}</Text>
         </View>
     )
 }
