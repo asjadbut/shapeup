@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { Text, View, Modal, Pressable} from "react-native";
 import Tool from './components/Tool';
+import ModalCustom from './components/ModalCustom';
 import styles from './styles/style';
 import { toolsData } from "./data/toolsData";
 
@@ -20,24 +21,7 @@ export default function Page() {
           })}
         </View>
       </View>
-      <Modal
-        animationType="slide"
-        transparent={false}
-        visible={modalVisible}
-        onRequestClose={() => {
-          setModalVisible(!modalVisible);
-        }}>
-        <View style={styles.centeredView}>
-          <View style={styles.modalView}>
-            <Text style={styles.modalText}>{modalText}</Text>
-            <Pressable
-              style={[styles.button, styles.buttonClose]}
-              onPress={() => setModalVisible(!modalVisible)}>
-              <Text style={styles.textStyle}>CLOSE</Text>
-            </Pressable>
-          </View>
-        </View>
-      </Modal>
+      <ModalCustom modalVisible={modalVisible} setModalVisible={setModalVisible} modalText={modalText}/>
     </View>
   );
 }
