@@ -17,10 +17,17 @@ export default function BodyFatCalculator() {
   const [heightInput, setHeightInput] = useState(0);
 
   const calculateBodyFat = () => {
-    let result = Number(waistInput) + Number(neckInput) + Number(heightInput);
-    console.log(genderInput);
-    console.log(result);
+    let [waist, hip, neck, height, fatPercentage] = [Number(waistInput), Number(hipInput), Number(neckInput), Number(heightInput), 0];
+    genderInput == 1 ? fatPercentage = calculateBodyFatForMan(waist, neck, height) : fatPercentage = calculateBodyFatForWoman(waist, hip, neck, height);
+    console.log(fatPercentage);
+  }
 
+  const calculateBodyFatForMan = (waist, neck, height) => {
+    return ((86.010 * (Math.log10(waist - neck))) - (70.041 * (Math.log10(height))) + 36.76);
+  }
+
+  const calculateBodyFatForWoman = (waist, hip, neck, height) => {
+    return ((163.205 * Math.log10(waist + hip - neck)) - (97.684 * Math.log10(height)) - 78.387);
   }
 
   return (
