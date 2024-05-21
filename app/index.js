@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { Text, View, Modal, Pressable} from "react-native";
 import Tool from './components/Tool';
-import ModalCustom from './components/ModalCustom';
+import MessageModal from './components/MessageModal';
 import styles from './styles/style';
 import { toolsData } from "./data/toolsData";
 
@@ -21,7 +21,7 @@ export default function Page() {
           })}
         </View>
       </View>
-      <ModalCustom modalVisible={modalVisible} setModalVisible={setModalVisible} modalText={modalText}/>
+      <MessageModal modalVisible={modalVisible} setModalVisible={setModalVisible} modalText={modalText}/>
     </View>
   );
 }

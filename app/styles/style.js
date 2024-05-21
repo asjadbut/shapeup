@@ -104,6 +104,32 @@ const styles = StyleSheet.create({
   placeholderStyle:{
     color:"#232323",
     fontSize:14
+  },
+  resultModalTitle: {
+    marginBottom: 15,
+    textAlign: 'center',
+  },
+  resultModalResult: {
+    marginBottom: 15,
+    textAlign: 'center',
+    fontSize:25,
+    fontWeight:'bold'
+  },
+  resultModalImage: {
+    marginBottom: 15,
+    height:50,
+    width:50
+  },
+  resultModalCloseBtn:{
+    borderRadius:8,
+    padding: 5,
+    paddingLeft:10,
+    paddingRight:10,
+    elevation: 2,
+    backgroundColor: 'black',
+    position:'absolute',
+    right:8,
+    top:8
   }
 
 });

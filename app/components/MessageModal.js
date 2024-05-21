@@ -2,7 +2,7 @@ import { View,Text,Modal,Pressable } from 'react-native'
 import styles from '../styles/style';
 import React from 'react'
 
-export default function ModalCustom({modalVisible, setModalVisible,modalText}) {
+export default function MessageModal({modalVisible, setModalVisible,modalText}) {
   return (
     <Modal
         animationType="slide"
